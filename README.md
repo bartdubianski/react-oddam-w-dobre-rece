@@ -1,4 +1,5 @@
 # Oddam w Dobre Ręce
+*Project currently in progress*
 
 ## Aim of the project
 Main task of this project is to recreate a website based on the .xd layout mockup created by Magda - a Coders Lab UI/UX course student.
