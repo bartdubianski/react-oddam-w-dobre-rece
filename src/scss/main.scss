@@ -1,0 +1,202 @@
+@import "generic/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import "settings";
+
+body {
+    font-family: $font-base;
+    text-align: center;
+}
+
+.home {
+    
+    .home-top {
+        max-height: 963px;
+        padding-left: 30vh;
+        background-image: url("../assets/Home-Hero-Image.jpg");
+        background-position: -483px;
+        background-size: 1368px 963px;
+        background-repeat: no-repeat;
+        
+    }
+
+    .home-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 15vh;
+        padding-right: 7vh;
+        .navigation-login {
+            display: flex;
+            list-style-type: none;
+            font-size: 0.8rem;
+            margin: 0;
+            li {
+                margin-left: 15px;
+                padding: 10px;
+                a {
+                    text-decoration: none;
+                    color: $color-darkgrey;
+                }
+                &:last-of-type {
+                    border-style: solid;
+                    border-color: $color-yellow;
+                    border-width: 1px;
+                }
+            }
+        }
+        .navigation-links {
+            display: flex;
+            list-style-type: none;
+            font-size: 1.1rem;
+            margin: 0;
+            ul {
+                padding-inline-start: 0;
+            }
+            li {
+                margin-left: 15px;
+                padding: 10px;
+                a {
+                    text-decoration: none;
+                    color: $color-darkgrey;
+                }
+                &:first-of-type {
+                    border-style: solid;
+                    border-color: black;
+                    border-width: 1px;
+                }
+            }
+        }
+    }
+    
+    .home-header {
+        height: 85vh;
+        max-height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color-darkgrey;
+        .home-buttons {
+            font-size: 2rem;
+        }
+    }
+}
+
+.text-decoration {
+    display: inline-block;
+    font-size: 2rem;
+
+    
+
+    &:after {
+    content: "";
+    width: 253px;
+    height: 33px;
+    display: inline-block;
+    background-image: url("../assets/Decoration.svg");
+  }
+}
+
+button {
+    font-size: 2rem;
+    padding: 15px 30px;
+    margin: 30px 30px;
+    width: 250px;
+    background-color: white;
+    border-style: solid;
+    border-color: $color-darkgrey;
+    color: $color-darkgrey;
+    white-space: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.home-columns {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .column {
+        display: block;
+        text-align: center;
+        
+
+        .title {
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        
+        .text {
+            font-family: $font-alt;
+            font-size: 0.8rem;
+
+        }
+    }
+}
+
+.yellow {
+    background-color: $color-yellow; 
+}
+
+.grey {
+    background-color: $color-grey;   
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    
+    .about-us-text {
+        padding: 0 100px;
+        font-size: 1.5rem;
+    }
+
+    .image-people {
+        min-height: 100% ;
+        width: 50%;
+    }
+}
+
+.signature {
+    text-align: right;
+    padding: 10px;
+
+    img {
+        width: 120px;
+    }
+
+    
+}
+
+.who-we-help {
+    
+    .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .option {
+            
+            font-size: 1rem;
+            padding: 10px;
+            height: 70px;
+            width: 150px;
+            text-transform: initial;
+            border-color: $color-darkgrey;
+        }
+        
+        p {
+            padding: 0 200px;
+        }
+    }
+}
